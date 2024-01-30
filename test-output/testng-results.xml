@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-01-23T17:43:20 EET" name="Default suite" finished-at="2024-01-23T17:43:25 EET" duration-ms="5310">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@3febb011]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2024-01-23T17:43:20 EET" name="Default test" finished-at="2024-01-23T17:43:25 EET" duration-ms="5310">
+      <class name="runner.TestRunner">
+        <test-method is-config="true" signature="startdriver(java.lang.String)[pri:0, instance:runner.TestRunner@3febb011]" started-at="2024-01-23T17:43:13 EET" name="startdriver" finished-at="2024-01-23T17:43:20 EET" duration-ms="6456" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startdriver -->
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.TestRunner@3febb011]" started-at="2024-01-23T17:43:20 EET" name="setUpClass" finished-at="2024-01-23T17:43:20 EET" duration-ms="591" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@41dc0598]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@3febb011]" started-at="2024-01-23T17:43:20 EET" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-01-23T17:43:25 EET" duration-ms="4438" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["user registration"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User Registration"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at org.testng.Assert.assertTrue(Assert.java:55)
+at stepdefinitions.UserRegistration.the_registeration_page_displayed_succefully(UserRegistration.java:48)
+at ✽.the registeration page displayed succefully(file:///C:/Users/mostafa/eclipse-workspace/taf2/src/test/java/features/UserRegistration.feature:7)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="screenshotonfaliure(org.testng.ITestResult)[pri:0, instance:runner.TestRunner@3febb011]" started-at="2024-01-23T17:43:25 EET" name="screenshotonfaliure" finished-at="2024-01-23T17:43:25 EET" duration-ms="186" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=runScenario status=FAILURE method=AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@3febb011] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotonfaliure -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.TestRunner@3febb011]" started-at="2024-01-23T17:43:25 EET" name="tearDownClass" finished-at="2024-01-23T17:43:25 EET" duration-ms="49" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+        <test-method is-config="true" signature="stopdriver()[pri:0, instance:runner.TestRunner@3febb011]" started-at="2024-01-23T17:43:25 EET" name="stopdriver" finished-at="2024-01-23T17:43:25 EET" duration-ms="372" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopdriver -->
+      </class> <!-- runner.TestRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
